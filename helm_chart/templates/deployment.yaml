@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hm-user
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: hm-user
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: hm-user
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.phpImageVersionName }}:{{ .Values.phpImageVersionTag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /health.php
+              port: 80
+            periodSeconds: {{ .Values.containers.livenessProbe.periodSeconds }}
+          readinessProbe:
+            httpGet:
+              path: /health.php
+              port: 80
+            periodSeconds: {{ .Values.containers.readinessProbe.periodSeconds }}

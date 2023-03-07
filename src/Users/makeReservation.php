@@ -48,7 +48,6 @@ if (isset($_GET['notAvailable'])) {
     echo '<h3 style="color:red">Number of rooms requested are not available</h3>';
   }
 
-echo "<h1 style=\"text-align:left; font-size:20px;\">Please choose the hotel name:</h1>";
 ?>
 
         <form action="/Users/reserve.php" method="POST">

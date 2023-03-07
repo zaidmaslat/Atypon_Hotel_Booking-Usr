@@ -33,7 +33,6 @@
 					</li>
                     <li class="nav-item">
 						<a class="nav-link" href="http://app.hotel-booking-378919.com/">Sign out</a>
-                        http://app.hotel-booking-378919.com/
 					</li>
 				</ul>
 			</div> 

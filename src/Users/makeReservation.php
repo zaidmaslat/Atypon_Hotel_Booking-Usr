@@ -44,12 +44,7 @@
     </div>
     <div class="registration-form">
 
-<?php
-if (isset($_GET['notAvailable'])) {
-    echo '<h3 style="color:red">Number of rooms requested are not available</h3>';
-  }
 
-?>
 
         <form action="/Users/reserve.php" method="POST">
             <input type="hidden" name="userID" value="<?php echo $_GET['userID'] ?>">
@@ -77,6 +72,13 @@ if (isset($_GET['notAvailable'])) {
 
             <div class="form-group displayField">
                 <label class="marginLabel">Number of rooms</label>
+<?php
+if (isset($_GET['notAvailable'])) {
+    echo '<label style="color:red">Number of rooms requested are not available</label>';
+  }
+
+?>
+
                 <input type="number" name="num-rooms" class="form-control">
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary create-account">Submit</button>

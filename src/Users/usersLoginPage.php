@@ -52,7 +52,7 @@
                                 </div>
                                 <div class="solu_description">
                                     <h3>
-                                        <a class="link" href='searchHotel.php?userID=<?php echo $_GET['userID'];?></a>'>Search for a Hotel</a>
+                                        <a class="link" href='searchHotel.php?userID=<?php echo $_GET['userID'];?>'>Search for a Hotel</a>
                                     </h3>
                                 </div>
                             </div>
@@ -66,7 +66,7 @@
                                 <div class="solu_description">
                                     <h3>
 
-                                        <a class="link" href='monitorReservations.php?userID=<?php echo $_GET['userID'];?></a>'>Monitor My Reservations</a>
+                                        <a class="link" href='monitorReservations.php?userID=<?php echo $_GET['userID'];?>'>Monitor My Reservations</a>
                                     </h3>
                                 </div>
                             </div>

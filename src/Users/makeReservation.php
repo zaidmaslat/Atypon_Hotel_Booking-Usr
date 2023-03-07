@@ -72,14 +72,13 @@
 
             <div class="form-group displayField">
                 <label class="marginLabel">Number of rooms</label>
+                <input type="number" name="num-rooms" class="form-control">
 <?php
 if (isset($_GET['notAvailable'])) {
     echo '<label style="color:red">Number of rooms requested are not available</label>';
   }
 
 ?>
-
-                <input type="number" name="num-rooms" class="form-control">
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary create-account">Submit</button>
                 </div>

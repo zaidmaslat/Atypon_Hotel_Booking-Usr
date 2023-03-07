@@ -32,7 +32,8 @@
 						<a class="nav-link" href="monitorReservations.php?userID=<?php echo $_GET['userID'] ?>">Reservations</a>
 					</li>
                     <li class="nav-item">
-						<a class="nav-link" href="#">Sign out</a>
+						<a class="nav-link" href="http://app.hotel-booking-378919.com/">Sign out</a>
+                        http://app.hotel-booking-378919.com/
 					</li>
 				</ul>
 			</div> 
